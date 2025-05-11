@@ -1,6 +1,6 @@
 name: anil128bot
 routes:
-  - path: /
+  path: /
     type: http
     port: 8080
 
