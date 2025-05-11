@@ -1,0 +1,11 @@
+name: anil128bot
+routes:
+  - path: /
+    type: http
+    port: 8080
+
+build:
+  command: pip install -r requirements.txt
+
+run:
+  command: python main.py
