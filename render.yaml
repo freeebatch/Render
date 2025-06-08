@@ -1,11 +1,10 @@
-name: annu
-routes:
-  path: /
-    type: http
-    port: 8080
-
-build:
-  command: pip install -r requirements.txt
-
-run:
-  command: python main.py
+services:
+  - name: annu
+    type: web
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8080
